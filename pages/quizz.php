@@ -32,21 +32,23 @@ $quizzes = $quizzes_stmt->fetchAll(PDO::FETCH_ASSOC);
             padding: 0;
         }
 
-        /* .quiz-item {
+        .quiz-item {
             margin: 10px 0;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            background-color: #f9f9f9;
-        } */
+            background-color:rgb(178, 131, 248);
+        }
 
         .quiz-item h2 {
             margin-top: 0;
+            background-color:rgb(178, 131, 248);
         }
 
         .quiz-item p {
             margin: 5px 0 0;
             color: #AA5;
+            background-color:rgb(178, 131, 248);
         }
 
         .quiz-item a {
@@ -54,6 +56,7 @@ $quizzes = $quizzes_stmt->fetchAll(PDO::FETCH_ASSOC);
             margin-top: 10px;
             color: #007BFF;
             text-decoration: none;
+            background-color: #ffdb4f;
         }
 
         .quiz-item a:hover {
