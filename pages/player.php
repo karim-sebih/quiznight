@@ -1,13 +1,4 @@
 <?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    header('Location:login.php');
-    exit();
-} else if (!isset($_GET['quiz_id'])) {
-    header("Location:quizz.php");
-    exit();
-}
-
 
 $pdo = new PDO("mysql:host=localhost;dbname=quiznight;charset=utf8","root","");
 

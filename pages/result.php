@@ -1,9 +1,4 @@
 <?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    header('Location:login.php');
-    exit();
-}
 $pdo = new PDO("mysql:host=localhost;dbname=quiznight;charset=utf8","root","");
 
 $user_answers = $_POST['answers'] ?? [];

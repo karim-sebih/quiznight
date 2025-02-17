@@ -1,0 +1,274 @@
+/* index */
+
+
+body {
+    background-color: #512DA8;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-size: small;
+    font-style: normal;
+}
+
+
+
+.quiz_title {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    color: #ffbd4f;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 50px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+
+    color: #ffbd4f;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+
+
+
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+
+
+
+
+.quiz_logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.quiz_logo img{
+    width: 10%;
+    
+}
+
+.quiz_card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 3%;
+   
+}
+
+.admin_card {
+    width: 490px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    background: transparent;
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    justify-content: space-evenly;
+}
+
+.admin_card .btn {
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5%;
+    color: #ffbd4f;
+    text-decoration: none;
+    font-family: "Press Start 2P", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+    
+}
+
+.admin_card .btn:hover {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #ffbd4f;
+}
+
+
+
+/*
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #45c1df;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+}
+*/
+
+
+/* inscription et connexion */
+.formulaire1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.tittle {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 6%;
+    color: #ffbd4f
+}
+
+
+.container_card form {
+    width: 290px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    background: transparent;
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.container_card p {
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 15%;
+    color: #ffbd4f;
+}
+
+.container_card a {
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 10%;
+    color: #f9f871;
+    font-size: x-small;
+}
+
+.button {
+    width: 120px;
+    height: 30px;
+    background: #000000;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5%;
+    color: #ffbd4f;
+    text-decoration: none;
+    font-family: "Press Start 2P", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: xx-small;
+
+}
+
+.button:hover {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #ffbd4f;
+}
+
+.formulaire2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1%;
+    position: inherit;
+}
+
+.fill {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.container_card2 form {
+    width: 390px;
+    height: 390px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    background: transparent;
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.container_card2 p {
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 10%;
+    color: #ffbd4f;
+
+}
+
+.container_card2 a {
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 10%;
+    color: #edc00a;
+    font-size: small;
+}
+
+.button2 {
+    width: 120px;
+    height: 40px;
+    background: #000000;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: none;
+    color: #ffbd4f;
+    text-decoration: none;
+    font-family: "Press Start 2P", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: x-small;
+}
+
+.button2:hover {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #ffbd4f;
+}
+
+.messageErr {
+    margin-top: 5%;
+    text-align: center;
+    color: #ffbd4f;
+}
+
+
+#footer {
+    bottom: 0px;
+    color: #ffbd4f;
+    width: 100%;
+    text-align: center;
+    font-size: x-small;
+  margin-top: 7%;
+
+
+}

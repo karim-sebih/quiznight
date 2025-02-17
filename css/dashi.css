@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #512DA8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    color: #ffbd4f;
+    
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: auto;
+    
+    font-family: "Press Start 2P", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+ 
+  a {
+    text-decoration: none;
+   
+  }
+
+  /* Nav bar */
+  li{
+    list-style: none;
+  }
+
+  header{
+    position: relative;
+    padding: 0 2rem;
+    background-color: #b39cd0;
+    }
+    
+    .navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    
+    .navbar .logo img {
+    min-width: 60%;
+    height: 60px;
+    object-fit: cover;
+    }
+    
+    
+    
+    
+    
+    @media (max-width:599px) {
+      .navbar .logo img{
+        height: 40px;
+      }
+    }
+    
+    @media (max-width:320px) {
+      .navbar .logo img{
+        height: 30px;
+      }
+    }
+    
+    .navbar .links {
+    display: flex;
+    gap: 2rem;
+    }
+    
+    
+    .navbar .burger-menu-button {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    }
+    
+    
+    .buttons{
+    display: flex;
+    gap: 30px;
+    }
+    
+    
+    /*burger-menu*/
+    
+    .burger-menu{
+    display: none;
+    height:0; 
+    position: absolute;
+    right: 2rem;
+    top:60px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.906);
+    border-radius: 10px;
+    overflow:hidden ;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    } 
+    
+    
+    
+    .burger-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    
+    .divider {
+    height: 1px;
+    background-color: #fff;
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    }
+    
+    .buttons-burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+    }
+    
+    /* -------Responsive navbar-------*/
+    
+    @media (max-width: 990px) {
+    
+    
+    .navbar .links,
+    .navbar .buttons
+    {
+    display: none;
+    }
+    
+    .navbar .burger-menu-button{
+    display: block;
+    }
+    
+    .burger-menu{
+      display: block;
+      
+      }
+    
+    .burger-menu.open{
+      height: 270px;
+    }
+    
+    }
+    
+    
+    @media (max-width: 599px) {
+    
+    
+    
+     .burger-menu{    left:  2rem;
+        width: unset;
+        
+    }
+    
+    }
+    /*----Fin media queries nav bar*/
+    .container {
+      
+      text-align: center;
+      max-height: 100%; /* Adjust as needed */
+      
+      
+    }
+    
+    .container a {
+      color: black;
+    }
+    
+    .btnadd {
+      background: #fff;
+      padding: 10px 15px;
+      color: #000;
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-size: 10px;
+      border-radius: 5px;
+      box-shadow: 6px 6px 29 -4px rgba(0, 0, 0, 0.75);
+      margin-top: 25px;
+      text-decoration: none;
+      transition: 0.4s;
+    }
+    
+    .btnadd:hover {
+      background: #000;
+      color: #fff;
+    }
+    
+    .popup {
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .popup-content {
+      max-height: 100%; /* Set maximum height relative to the viewport */
+      overflow-y: auto; /* Enable vertical scrolling */
+      width: 97%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      position: relative;
+    }
+    
+    .close {
+      position: absolute; /* Fix the position of the close button */
+      top: 15px;
+      right: 20px;
+      height: 20px;
+    }
+    
+    header {
+      font-size: initial; /* Rétablit la taille par défaut */
+      overflow: visible; /* Permet à son contenu de s'afficher normalement */
+    }
+    
+    
+    html  {
+      font-size: 62.5%;
+      overflow-x: hidden;
+    }
+    
+    .quiz-display .quiz-display-table    .btn {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      border-radius: .5rem;
+      margin-top: 1rem;
+      font-size: 1.7rem;
+      padding: 1rem 3rem;
+      background: green;
+      color: white;
+      height: 100px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+
+    .quiz-display{
+      margin:2rem 0;
+    }
+    
+    .quiz-display .quiz-display-table{
+      width: 100%;
+      
+      text-align: center;
+    }
+    
+    .quiz-display .quiz-display-table thead{
+      background: grey;
+    }
+    
+    .quiz-display .quiz-display-table th{
+      padding:1rem;
+      font-size: 2rem;
+    }
+    
+    
+    .quiz-display .quiz-display-table td{
+      padding:1rem;
+      
+      border-bottom: var(--border);
+    }
+    .quiz-display .quiz-display-table .btn:first-child {
+      background: green;
+      height: 50px;
+    }
+    .quiz-display .quiz-display-table .btn:first-child:hover{
+      color: white;
+    }
+    .quiz-display .quiz-display-table .btn:last-child {
+      background: crimson;
+      height: 70px;
+    }
+    
+    .quiz-display .quiz-display-table .btn:last-child:hover {
+      color: white;
+    }
+    
+    .filtrer{
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+
+/* Adaptation du style pour les quiz */
+.question-group {
+  margin: 20px 0;
+  padding: 15px;
+  
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.question-group input{
+  
+  width: 60%;
+}
+
+.question-group .answer{
+  margin-top: 15px;
+}
+
+.question-group .answer input{
+  width: 40%;
+  
+}
+
+.answer {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    margin: 5px 0;
+}
+
+.btn-add-question {
+    margin: 15px 0;
+    padding: 8px 20px;
+    background: #141317;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-add{
+    margin: 15px 0;
+    padding: 8px 20px;
+    background: #141317;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+.admin-quiz-form-container{
+  color: black;
+}
+
+#quiz_title{
+  width: 200px;
+}
+
+#quiz_description{
+  width: 50%;
+  
+}
+
+textarea.box {
+  
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px; /* espace sous le champ */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+
+
+  /* Spécifique au textarea : */
+textarea.box {
+  /* Largeur identique à l’input */
+   max-width: 90%;
+   height:50%;
+   max-height:50% ;
+   min-width: 80%;
+  
+  /* Hauteur minimum (vous pouvez ajuster) */
+  min-height: 80px; 
+  
+}
