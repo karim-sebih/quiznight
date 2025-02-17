@@ -42,7 +42,7 @@ $quizzes = $quizzes_stmt->fetchAll(PDO::FETCH_ASSOC);
 
         .quiz-item p {
             margin: 5px 0 0;
-            color: #AA5;
+            color: black;
             background-color:rgb(178, 131, 248);
         }
 

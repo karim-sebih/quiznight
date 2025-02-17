@@ -26,7 +26,7 @@
                 <form action="./pages/login.php">
                     <input type="submit" value="Admin" class="btn" style="height:50px; width:100px" >
                 </form>
-                <form action="quizz.php">
+                <form action="./pages/quizz.php">
                     <input type="submit" value="Player" class="btn" style="height:50px; width:100px">
                 </form>
             </div>
