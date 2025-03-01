@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_id'])) {
+if (isset($_POST['username']) & isset($_POST['password'] )) {
     header('Location:login.php');
     exit();
 }
@@ -122,15 +122,6 @@ if (isset($_POST['save_quiz'])) {
         <div class="buttons">
             <a href="deconnexion.php">Déconnexion</a>
         </div>
-        <div class="burger-menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </div>
-    <div class="burger-menu open">
-        <ul class="links">
-           
-        </ul>
-    </div>
 </header>
 
 <div class="container">
