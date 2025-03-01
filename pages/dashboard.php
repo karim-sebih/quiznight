@@ -1,8 +1,9 @@
 <?php
 session_start();
-if (isset($_POST['username']) & isset($_POST['password'] )) {
-    header('Location:login.php');
-    exit();
+
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    header('Location: login.php');
+    exit;
 }
 
 ?>
@@ -122,6 +123,7 @@ if (isset($_POST['save_quiz'])) {
         <div class="buttons">
             <a href="deconnexion.php">Déconnexion</a>
         </div>
+        
 </header>
 
 <div class="container">

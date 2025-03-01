@@ -57,6 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p class="inscription"> "Vous n'avez pas de compte"
                        <br><br><br> <a href="signup.php">Inscription</a>
                     </p>
+
                 </form>
                 <?php if ($message) echo "<p>$message</p>"; ?>
             </div>
